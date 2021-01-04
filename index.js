@@ -3,11 +3,11 @@ const express = require("express");
 const app = express()
 
 app.get("/", (req, res) => {
-    res.send("Hello there")
+    res.status(200).send("Hello there")
 })
 
 app.get("/test", (req, res) => {
-    res.send("You are on the Testing Route")
+    res.status(200).send("You are on the Testing Route")
 })
 
 //more routes POST, PUT, DELETE, PATCH also can be used
